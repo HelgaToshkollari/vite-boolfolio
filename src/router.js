@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./pages/Home.vue";
 import AboutPage from "./pages/About.vue";
 import ContactsPage from "./pages/Contacts.vue";
-import ProjectsShowPage from "./pages/Show.vue";
-import ProjectsIndexPage from "./pages/Index.vue";
+import ProjectsShowPage from "./pages/projects/Show.vue";
+import ProjectsIndexPage from "./pages/projects/Index.vue";
 
 const router = createRouter({
     history: createWebHistory(),

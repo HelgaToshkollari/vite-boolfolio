@@ -28,8 +28,11 @@ export default{
 
 <template>
   <TheHeader></TheHeader>
+
+  <router-view></router-view>
  
- <div class="container">
+ <!--
+  <div class="container">
     <div class="row justify-content-center py-4">
           <div class="col-md-9">
             <div class="card">
@@ -64,6 +67,7 @@ export default{
           </div>
     </div> 
  </div>
+ -->
 </template>
 
 <style lang="scss">

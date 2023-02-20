@@ -7,8 +7,10 @@
                 <ul class="navbar-nav d-flex">
                     <li class="nav-item active" v-for="(link, index) in menuLinks" :key="index">
 
-                      <a class="nav-link" :href="link.link">{{ link.label }}</a>
+                      <!--<a class="nav-link" :href="link.link"></a>-->
+                      <router-link :to="{name: link.routeName}" class="nav-link" >{{ link.label }}</router-link>
                     </li>
+
                     
                 </ul>
                 <form class="form-inline my-2 my-lg-0 d-flex">
@@ -31,7 +33,7 @@ export default{
             },
             {
                 label:"Projects",
-                routeName:"projects"
+                routeName:"projects.index"
             },
             {
                 label:"About us",

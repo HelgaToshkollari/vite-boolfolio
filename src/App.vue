@@ -40,15 +40,21 @@ export default{
                     <th>Cover</th>
                     <th>Title</th>
                     <th>Description</th>
-                    <th></th>
+                    <th>technologies</th>
                   </tr>
                 </thead>
                 <tbody>
                 <tr v-for="project in projects" :key="project.id">
-                  <td>{{ project.cover_img }}</td>
-                  <td>{{ project.title }}</td>
+                  <td> <img :src="project.cover_img "  alt="" style="width: 90px">
+                   </td>
+                  <td><a :href="projects"></a>{{ project.title }}</td>
                   <td>{{ project.description }}</td>
-                  <td>{{ project.technologies }}</td>
+                  <td> 
+                    <div v-for="technology in project.technologies" :key="technology.id">
+                      {{ technology.name }}
+
+                    </div>
+                   </td>
                 </tr>
                  
                 </tbody>
